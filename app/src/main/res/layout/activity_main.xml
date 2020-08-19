@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/test2"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="50dp"
+        android:text="TIC TAC TOE "
+        android:textColor="#E53935"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_p1name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#D81B60"
+        android:ems="10"
+        android:hint="player 1"
+        android:inputType="textPersonName"
+        android:textColor="#D81B60"
+        android:textColorHint="#D81B60"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/et_p2name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#D81B60"
+        android:ems="10"
+        android:hint="player 2"
+        android:textColorHint="#D81B60"
+        android:inputType="textPersonName"
+        android:textColor="#D81B60"
+        app:layout_constraintEnd_toEndOf="@+id/et_p1name"
+        app:layout_constraintStart_toStartOf="@+id/et_p1name"
+        app:layout_constraintTop_toBottomOf="@+id/et_p1name" />
+
+    <Button
+        android:id="@+id/b_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:onClick="play"
+        android:text="PLAY"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/et_p2name"
+        app:layout_constraintTop_toBottomOf="@+id/et_p2name" />
+
+    <Button
+        android:id="@+id/b_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:onClick="bexit"
+        android:text="EXIT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/b_play"
+        app:layout_constraintTop_toTopOf="@+id/b_play" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
